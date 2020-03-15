@@ -12,7 +12,7 @@
             @endforeach
         
             <div class="card">
-                <div class="card-header">カテゴリーを登録する</div>
+                <div class="card-header">カテゴリー登録</div>
                 <div class="card-body">
                     <div class="card-part">
                         <p class="m-size">登録されているカテゴリー</p>

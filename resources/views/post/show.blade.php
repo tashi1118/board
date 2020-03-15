@@ -62,7 +62,7 @@
                                 @csrf
                                 <div class="form-group">
                                     <label for="content">レスする</label>
-                                    <textarea class="form-input" name="content" cols="45" rows="5" maxlength="1000"></textarea>
+                                    <textarea class="form-input" name="content" cols="45" rows="5" maxlength="1500"></textarea>
                                 </div>
                                 <input type="hidden" name="post_id" value="{{ $post->id }}">
                                 <input type="submit" value="書き込む">
