@@ -20,17 +20,14 @@ class SearchController extends Controller
 
         if($word) {
         $posts = Post::where('title', 'like', '%'.$word.'%')
-        ->get();
-
+            ->paginate(10);
 
         $ress = Response::where('content', 'like', '%'.$word.'%')
-        ->get();
-            
+            ->paginate(10);
 
         } else {
             return redirect('/home');
         }
-        // dd($posts);
         return view('search.index', compact('posts','ress'));
     }
 

@@ -32,6 +32,7 @@
                                     </div>
                                 </li>
                             @endforeach
+                            {{ $posts->appends(request()->input())->links() }}
                         @else
                             <p>該当するスレッドはありませんでした</p>
                         @endif
@@ -59,6 +60,7 @@
                                     </span>
                                 </li>
                             @endforeach
+                            {{ $ress->appends(request()->input())->links() }}
                         @else
                             <p>該当するレスはありませんでした</p>
                         @endif
